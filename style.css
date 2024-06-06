@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: red;
+    background-image: conic-gradient(rgb(105, 149, 52), yellow, cyan, rgba(227, 35, 221, 0.462));
+    margin-bottom: 6rem;
+}
+
+.registration>h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.input-section {
+    margin-left: 3rem;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+
+}
+.input-label{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.input-label small{
+    color: #e74c3c;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.input-label.error small{
+    visibility: visible;
+}
+
+input {
+    width: 20rem;
+    height: 1.7rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    padding-left: 10px;
+
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.btn {
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    background-color: rgba(103, 123, 59, 209.178);
+    color: white;  
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.right-section{
+    margin-left: 5rem;
+    max-height: 400px; 
+    overflow-y: auto;
+    padding: 10px; 
+}
+.registered {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-headings {
+    display: flex;
+    border: 2px solid black;
+    padding: 1rem 0;
+}
+
+.student-headings>h1 {
+    padding-left:  1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+
+.student-details {
+    display: flex;
+    border: 2px solid black;
+  
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.student-details>p {
+    padding-left:  1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+.name{
+    width: 4rem;
+}
+.id{
+    width: 1rem;
+}
+.classname{
+    width: 2rem;
+}
+.roll{
+    width: 2rem;
+}
+.hide{
+    display: none;
+}
+.btns{
+    width: 3rem;
+    margin-right: 1rem;
+    height: 2rem; 
+    border-radius: 11px;
+    border: none;
+    color: black;
+    background-color: grey;
+    cursor:pointer
+}
+.right{
+    margin-right: 2rem;
+}
+
+/* responsive */
+@media (max-width:865px){
+.input-section{
+    margin: 0 auto;
+}
+.right-section{
+    margin: 0 auto;
+    padding: 5rem;
+}
+}
+
+@media (max-width:560px){
+    .right-section{
+        margin: 0 auto;
+        padding: 0rem;
+    }
+}
+@media(max-width:420px){
+    .student-headings>h1 {
+        padding-left: 0.7rem;
+        padding-right: 0.5rem;
+    }
+    .student-details>p {
+        padding-left: 0.7rem;
+        padding-right: 0.5rem;
+       
+    }
+}
